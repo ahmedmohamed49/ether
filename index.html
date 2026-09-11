@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ether in Technology</title>
+
+  <!-- CSS controls how the page looks. -->
+  <style>
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      background-color: #0b241d;
+      background-image: url("assets/background.png");
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .logo {
+      width: 560px;
+      max-width: 90%;
+      height: auto;
+      filter: grayscale(1) invert(1);
+      mix-blend-mode: screen;
+    }
+
+    h1 { font-size: 30px; margin-top: 30px; }
+    p { color: #c4d2c8; margin-bottom: 25px; }
+
+    video {
+      width: 100%;
+      max-width: 1040px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <!--  Company logo -->
+  <img class="logo" src="assets/ether.png" alt="Ether — Think Ahead">
+
+  <!--  Page text -->
+  <h1>Help your farm reach its full production potential.</h1>
+  <p>Satellite insights. Crop vision. One AI assistant.</p>
+
+  <!--  First video -->
+
+  <video autoplay muted loop playsinline
+         poster="assets/video.png"
+         onloadedmetadata="this.playbackRate = 0.5;"
+         aria-label="Satellite insights">
+    <source src="assets/satellite.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</body>
+</html>
