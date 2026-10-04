@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ether in Technology</title>
 
-  <!-- CSS controls how the page looks. -->
   <style>
     body {
       margin: 0;
@@ -21,6 +20,23 @@
       text-align: center;
     }
 
+    /* GRID CONTAINER */
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "menu"
+        "main";
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header { grid-area: header; }
+    .menu   { grid-area: menu; }
+    .main   { grid-area: main; }
+
+    /* LOGO */
     .logo {
       width: 560px;
       max-width: 90%;
@@ -30,8 +46,9 @@
     }
 
     h1 { font-size: 30px; margin-top: 30px; }
-    p { color: #c4d2c8; margin-bottom: 25px; }
+    p  { color: #c4d2c8; margin-bottom: 25px; }
 
+    /* VIDEO */
     video {
       width: 100%;
       max-width: 1040px;
@@ -39,22 +56,34 @@
     }
   </style>
 </head>
+
 <body>
-  <!--  Company logo -->
-  <img class="logo" src="assets/ether.png" alt="Ether — Think Ahead">
 
-  <!--  Page text -->
-  <h1>Help your farm reach its full production potential.</h1>
-  <p>Satellite insights. Crop vision. One AI assistant.</p>
+  <div class="grid-container">
 
-  <!--  First video -->
+    <!-- HEADER -->
+    <div class="header">
+      <img class="logo" src="assets/ether.png" alt="Ether — Think Ahead">
+    </div>
 
-  <video autoplay muted loop playsinline
-         poster="assets/video.png"
-         onloadedmetadata="this.playbackRate = 0.5;"
-         aria-label="Satellite insights">
-    <source src="assets/satellite.mp4" type="video/mp4">
-    Your browser does not support HTML video.
-  </video>
+    <!-- TITLE + SUBTITLE -->
+    <div class="menu">
+      <h1>Help your farm reach its full production potential.</h1>
+      <p>Satellite insights. Crop vision. One AI assistant.</p>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="main">
+      <video autoplay muted loop playsinline
+             poster="assets/video.png"
+             onloadedmetadata="this.playbackRate = 0.5;"
+             aria-label="Satellite insights">
+        <source src="assets/satellite.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+    </div>
+
+  </div>
+
 </body>
 </html>
