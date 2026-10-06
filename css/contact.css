@@ -1,0 +1,10 @@
+.contact { max-width: 600px; margin: 40px auto; padding: 24px; background: #102f27; border-radius: 12px; text-align: left; }
+.contact h2, .contact > p { text-align: center; }
+.contact label { display: block; margin-top: 14px; margin-bottom: 6px; }
+.contact input, .contact select, .contact button { width: 100%; box-sizing: border-box; padding: 12px; border: 2px solid #b1c8bd; border-radius: 6px; font: inherit; }
+.contact input, .contact select { background: white; color: #102f27; }
+.contact [aria-invalid="true"] { border-color: #ff9494; }
+.field-error { display: block; color: #ffb6b6; margin-top: 4px; }
+.contact button { margin-top: 20px; background: #c8ed98; color: #102f27; cursor: pointer; font-weight: bold; }
+.contact button:disabled { opacity: .65; cursor: wait; }
+#form-status { color: white; line-height: 1.6; }
